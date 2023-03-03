@@ -1,4 +1,4 @@
-package org.generation.lojadegames.security;
+package com.stellarGameStore.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -46,5 +46,4 @@ public class BasicSecurityConfig {
         return http.build();
 
     }
-
 }

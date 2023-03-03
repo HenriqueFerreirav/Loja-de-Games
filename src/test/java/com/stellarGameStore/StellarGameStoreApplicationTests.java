@@ -1,10 +1,10 @@
-package org.generation.lojadegames;
+package com.stellarGameStore;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LojadeGamesApplicationTests {
+class StellarGameStoreApplicationTests {
 
 	@Test
 	void contextLoads() {

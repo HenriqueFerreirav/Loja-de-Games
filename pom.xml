@@ -6,13 +6,13 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.8</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>org.generation</groupId>
-	<artifactId>lojadegames</artifactId>
+	<groupId>com.stellarGameStore</groupId>
+	<artifactId>stellarGameStore</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>LojadeGames</name>
-	<description>Projeto Loja de Games desenvolvido no bootcamp da Generation</description>
+	<name>stellarGameStore</name>
+	<description>Projeto CRUD JAVA SpringBoot criado no bootcamp Generation e Zé Delivery turma 59 - By Wagner Moreira</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -29,21 +29,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-<!-- Dependência da Spring Security -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		<!-- Dependência para Codificação do Token -->
-		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.mysql</groupId>
@@ -55,8 +50,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- Dependência da Spring Security -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<!-- Dependência para Codificação do Token -->
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -65,5 +69,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

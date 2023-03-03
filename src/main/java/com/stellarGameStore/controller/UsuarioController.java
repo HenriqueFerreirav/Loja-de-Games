@@ -1,14 +1,15 @@
-package org.generation.lojadegames.controller;
+package com.stellarGameStore.controller;
 
 import java.util.List;
 import java.util.Optional;
 
 import javax.validation.Valid;
 
-import org.generation.lojadegames.model.Usuario;
-import org.generation.lojadegames.model.UsuarioLogin;
-import org.generation.lojadegames.repository.UsuarioRepository;
-import org.generation.lojadegames.service.UsuarioService;
+import com.stellarGameStore.model.Usuario;
+import com.stellarGameStore.model.UsuarioLogin;
+import com.stellarGameStore.repository.UsuarioRepository;
+import com.stellarGameStore.service.UsuarioService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

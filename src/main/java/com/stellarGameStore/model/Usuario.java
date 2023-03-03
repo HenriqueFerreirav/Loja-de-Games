@@ -1,4 +1,4 @@
-package org.generation.lojadegames.model;
+package com.stellarGameStore.model;
 
 import java.util.List;
 
@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Entity
 @Table(name = "tb_usuarios")
 public class Usuario {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -41,8 +42,10 @@ public class Usuario {
 	@JsonIgnoreProperties("usuario")
 	private List<Produto> produto;
 
+	/*Getters and Setters */
+
 	public Long getId() {
-		return id;
+		return this.id;
 	}
 
 	public void setId(Long id) {
@@ -50,7 +53,7 @@ public class Usuario {
 	}
 
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 
 	public void setNome(String nome) {
@@ -58,7 +61,7 @@ public class Usuario {
 	}
 
 	public String getUsuario() {
-		return usuario;
+		return this.usuario;
 	}
 
 	public void setUsuario(String usuario) {
@@ -66,7 +69,7 @@ public class Usuario {
 	}
 
 	public String getSenha() {
-		return senha;
+		return this.senha;
 	}
 
 	public void setSenha(String senha) {
@@ -74,7 +77,7 @@ public class Usuario {
 	}
 
 	public String getFoto() {
-		return foto;
+		return this.foto;
 	}
 
 	public void setFoto(String foto) {
@@ -82,11 +85,10 @@ public class Usuario {
 	}
 
 	public List<Produto> getProduto() {
-		return produto;
+		return this.produto;
 	}
 
 	public void setProduto(List<Produto> produto) {
 		this.produto = produto;
-	}
-
+	}	
 }

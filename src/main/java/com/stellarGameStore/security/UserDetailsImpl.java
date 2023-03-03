@@ -1,13 +1,12 @@
-package org.generation.lojadegames.security;
+package com.stellarGameStore.security;
 
 import java.util.Collection;
 import java.util.List;
 
-import org.generation.lojadegames.model.Usuario;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-
+import com.stellarGameStore.model.Usuario;
 
 public class UserDetailsImpl implements UserDetails{
 
@@ -66,5 +65,4 @@ private static final long serialVersionUID =1L;
 		
 		return true;
 	}
-
 }
